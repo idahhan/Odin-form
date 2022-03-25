@@ -5,12 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+
+    #container {
+    display: flex;
+    }
+
+    #rightContainer {
+        display: flex;
+    }
+
+    #leftContainer{
+        width: 10vw;
+        height: 100vh;
+        background-color: rgb(48, 48, 48);
+    }
+
+    @font-face {
+        font-family: norse-bold;
+        src: url(fonts/norse-bold-webfont.woff);
+    }
+    span.image::before {
+        content:"";
+        background-image: url(images/bg.jpg);
+        background-size: 30vw 100vh;
+        width: 30vw;
+        height: 100vh;
+        display: inline-block;
+        
+    }
+    span.image {
+        width: 30vw;
+        height: 100vh;
+
+    }
+
+ 
+
+    .title {
+        position: absolute;
+        top: 30vh;
+        left: 100px;
+        text-align: center;
+        background-color: black;
+        font-family: norse-bold;
+        font-size: 50px;
+        color: white;
+    }
+
+    .heading {
+        position: relative;
+    }
+
+    .logo {
+        background-image: url(images/odin-lined.png);
+        background-size: 80px 80px;
+        content: "";
+        position: absolute;
+        top: 30vh;
+        left: 30px;
+        width: 80px;
+        height: 80px;
+
+
+    }
+
+</style>
+
+
+
 <body>
 
-    
+  
+<div id="container">
+    <div id="leftContainer"></div>
+    <div class="heading">
+        <span class="logo"></span>
+        <span class="title">ODIN</span>
+        <span class="image"></span>
+    </div>
+    <div id="rightContainer">
+        <div id="header"></div>
+        <div id="form"></div>
+        <div id="create"></div>
+    </div>
+</div>  
+
     
 </body>
 </html>
