@@ -46,8 +46,8 @@
 
     .title {
         position: absolute;
-        top: 30vh;
-        left: 100px;
+        top: 5vh;
+        left: 140px;
         text-align: center;
         background-color: black;
         font-family: norse-bold;
@@ -64,11 +64,19 @@
         background-size: 80px 80px;
         content: "";
         position: absolute;
-        top: 30vh;
-        left: 30px;
+        top: 2vh;
+        left: 40px;
         width: 80px;
         height: 80px;
+    }
 
+    .wrapper {
+        position: absolute;
+        background-color: black;
+        opacity: 70%;
+        height: 100px;
+        width: 100%;
+        top: 30vh;
 
     }
 
@@ -82,8 +90,10 @@
 <div id="container">
     <div id="leftContainer"></div>
     <div class="heading">
+        <div class="wrapper">
         <span class="logo"></span>
         <span class="title">ODIN</span>
+    </div>
         <span class="image"></span>
     </div>
     <div id="rightContainer">
